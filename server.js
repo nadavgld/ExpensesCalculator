@@ -23,7 +23,7 @@ db.once("open", () => {
     res.send("<h1> 404 Not Found </h1>");
   });
 
-  const PORT = process.env.SERVER_PORT || 5000;
+  const PORT =  process.env.PORT || 5000;
   app.listen(PORT, () => {
     console.log(`running server on ${PORT}`);
   });
