@@ -1,0 +1,136 @@
+.log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  border-bottom: 1px solid #33333320;
+  position: relative;
+  transition: all 0.2s ease;
+  transform-origin: top;
+  animation: pop 0.5s;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.log-icon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex: 1;
+}
+
+.log-icon > i {
+  font-size: 24px;
+  border-radius: 50%;
+  background: #333;
+  color: #fefefe;
+  padding: 15px;
+}
+
+.log-description {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 4;
+  padding-left: 20px;
+}
+
+.log-description > * {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.log-description > span {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #33333380;
+}
+
+.log-amount {
+  font-size: 30px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.log-action {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  font-size: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.log:hover .log-action {
+  opacity: 1;
+}
+
+.log-action:hover > i {
+  transform: rotate(90deg);
+}
+
+.log-action > i {
+  padding: 2px;
+  height: 0px;
+  line-height: 1;
+  color: crimson;
+  transition: all 0.2s ease;
+  transform-origin: 55% 220%;
+}
+
+@media only screen and (max-width: 600px) {
+  .log {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .log-icon {
+    justify-content: start;
+    margin: 0 50px 0 10px;
+    flex: inherit;
+  }
+
+  .log-description {
+    padding-left: 0;
+  }
+
+  .log-amount {
+    text-align: end;
+    padding-right: 8vw;
+  }
+
+  .log-action {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .log-amount {
+    font-size: 18px;
+  }
+
+  .log-description > h3 {
+    font-size: 1rem;
+  }
+}

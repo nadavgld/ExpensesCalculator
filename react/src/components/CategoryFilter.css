@@ -1,0 +1,36 @@
+.category {
+  font-size: 24px;
+  padding: 0.5rem;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 0.5rem; */
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.category::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 0;
+  background: lightgrey;
+  position: absolute;
+  right: -2px;
+}
+
+.category:last-child::after {
+  width: 0;
+}
+
+.selected-category {
+  background: darkseagreen;
+}
+
+.category:hover {
+  /* border: 1px solid white; */
+  background: rgba(143, 188, 143, 0.459);
+}

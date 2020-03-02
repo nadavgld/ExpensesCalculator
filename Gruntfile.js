@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     },
     exec: {
       "build-react": {
-        command: "cd react-client && npm run build && cd .."
+        command: "cd react && npm run build && cd .."
       },
       "start-server": {
         command: "npm run start",
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         expand: true,
-        cwd: "react-client/build/",
+        cwd: "react/build/",
         src: "**",
         dest: "./public/"
       }

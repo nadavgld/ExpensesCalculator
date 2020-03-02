@@ -1,0 +1,57 @@
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-container input,
+.add-container button,
+.add-container select {
+  padding: 0 5px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  height: 32px;
+  border-right: 2px solid darkseagreen;
+}
+
+.log-input {
+  width: 100px;
+}
+
+.inputs {
+  transform: scale(0);
+  transform-origin: right;
+  transition: all 0.2s ease;
+}
+
+.show-inputs {
+  transform: scale(1);
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  background: darkseagreen;
+  padding: 8px 10px;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reverse {
+  border-radius: 0;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.btn i {
+  padding: 0 5px;
+}
