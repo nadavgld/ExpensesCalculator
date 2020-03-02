@@ -1,0 +1,32 @@
+{
+    "logs": [
+        {
+            "id": 1,
+            "title": "Some stuff..",
+            "category": "SUPERMARKET",
+            "amount": 50,
+            "timestamp": "Mon Mar 02 2020 11:44:36"
+        },
+        {
+            "id": 2,
+            "title": "HANGGG OUT",
+            "category": "HANGOUT",
+            "amount": -120,
+            "timestamp": "Mon Mar 02 2020 11:44:36"
+        },
+        {
+            "id": 3,
+            "title": "Bills",
+            "category": "OTHER",
+            "amount": -320,
+            "timestamp": "Mon Mar 02 2020 11:44:36"
+        },
+        {
+            "id": 4,
+            "title": "Castro - Cashback",
+            "category": "SHOPPING",
+            "amount": 10,
+            "timestamp": "Mon Mar 02 2020 11:44:36"
+        }
+    ]
+}
